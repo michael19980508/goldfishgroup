@@ -2,32 +2,27 @@ body {
     font-family: "Microsoft JhengHei", sans-serif;
     background-color: #fffdf7;
     color: #333;
-    max-width: 900px;
-    margin: auto;
-    padding: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
-header {
-    background-color: #ffe7b2;
-    padding: 1em;
-    border-radius: 12px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0.2em 0;
-    color: #c75b00;
-}
-
 nav {
-    margin-top: 1em;
+    width: 200px;
+    background-color: #ffe7b2;
+    padding: 2em 1em;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-right: 1px solid #eee;
 }
 
 nav a {
-    margin: 0 1em;
+    display: block;
+    margin: 1em 0;
     text-decoration: none;
-    color: #333;
+    color: #c75b00;
     font-weight: bold;
 }
 
@@ -35,11 +30,17 @@ nav a:hover {
     color: #ff8c00;
 }
 
+main {
+    flex: 1;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
 section {
     background: #fffaf2;
     border-radius: 12px;
     padding: 1.5em;
-    margin-top: 1.5em;
+    margin-top: 1em;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
@@ -49,20 +50,27 @@ footer {
     color: #888;
 }
 
-/* 🔄 RWD 設定：手機和平板 */
+/* ✅ RWD 響應：手機版變上下堆疊 */
 @media (max-width: 768px) {
     body {
-        padding: 1em;
-        font-size: 1.05em;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: 1px solid #eee;
     }
 
     nav a {
-        display: block;
-        margin: 0.5em 0;
+        margin: 1em 0;
         text-align: center;
     }
 
-    section {
+    main {
         padding: 1em;
     }
 
