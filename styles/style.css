@@ -1,3 +1,4 @@
+
 body {
     font-family: "Microsoft JhengHei", sans-serif;
     background-color: #fffdf7;
@@ -50,7 +51,6 @@ footer {
     color: #888;
 }
 
-/* ✅ RWD 響應：手機版變上下堆疊 */
 @media (max-width: 768px) {
     body {
         flex-direction: column;
