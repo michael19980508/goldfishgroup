@@ -1,0 +1,40 @@
+
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #fffdf7;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+    padding: 1em;
+}
+header {
+    background-color: #ffe7b2;
+    padding: 1em;
+    border-radius: 12px;
+    text-align: center;
+}
+header h1 {
+    margin: 0.2em 0;
+    color: #c75b00;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ff8c00;
+}
+section {
+    background: #fffaf2;
+    border-radius: 12px;
+    padding: 1em;
+    margin-top: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+footer {
+    margin-top: 2em;
+    text-align: center;
+    color: #888;
+}
